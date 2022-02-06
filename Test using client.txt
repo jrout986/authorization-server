@@ -6,3 +6,7 @@ provide grant_type as password,
 provide username and password
 
 And finally make the call to get the bearer token
+
+
+To use the bearer token make a call to "http://localhost:8030/home" and under headers
+provide key as Authorization and value as "Bearer <bearer token>"
