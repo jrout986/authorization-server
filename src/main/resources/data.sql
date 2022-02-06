@@ -1,0 +1,1 @@
+insert into USER_ENTITY(id,username,password,active) values (1,'user1','{noop}user1',TRUE),(2,'user2','{noop}user2',TRUE);

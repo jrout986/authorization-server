@@ -1,0 +1,22 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: authorization-server
+
+
+  datasource:
+    url: jdbc:h2:mem:userdb
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+  security:
+    oauth2:
+      client:
+        provider:
+           custom-provider:
+            token-uri: http://localhost:8030/oauth/token
+            authorization-uri: http://localhost:8030/oauth/authorize

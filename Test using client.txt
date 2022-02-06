@@ -1,0 +1,8 @@
+there should be a post call to "http://localhost:8030/oauth/token"
+Authorization Type should be "Basic Auth" and under username and password, provide clientId and clientSecret
+Under body, select x-www-form-urlencoded
+
+provide grant_type as password,
+provide username and password
+
+And finally make the call to get the bearer token
